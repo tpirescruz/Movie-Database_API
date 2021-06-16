@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+body {
+    background-image: linear-gradient(to right top, #212121, #212121, #212121, #212121, #212121, #242424, #262626, #292929, #2f2f2f, #353535, #3c3c3c, #424242);    text-align: left;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+main {
+    padding:  5rem ;
+}
+.title-container p {
+    color: white;
+    font-weight: 100;
+}
+h1 {
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 400;
+    letter-spacing: .3rem;
+    font-size: 4rem;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+h1 span {
+    color: #36dac0;
+    font-weight: 700;
+    font-size: 5rem;
+    animation: shift 10s alternate-reverse infinite;
+}
+h2 {
+    border-bottom: 1px solid white;
+}
+h3 {
+    color: #36dac0;
+    font-weight: 100;
+}
+
+p{
+    font-size: 1.2rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+input:hover,
+input:focus {
+    transition: .8s;
+    outline: none;
+    border-bottom: 2px solid #FF08E2;
+    filter: drop-shadow(10px 10px 5px black);
+    width: 40%;
+}
+input {
+    transition: .8s;
+    margin: 5rem auto;
+    border: none;
+    border-bottom: 2px solid #36dac0;
+    color: white;
+    width: 50%;
+    background-color: transparent;
+    padding: .6rem;
+    text-align: center;
+}
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) ;
+    grid-gap: 2rem;
+    /* flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+}
+
+li:hover {
+    transition: .5s;
+    border: 2px solid #36dac0;
+    box-shadow: 2px 2px 20px black;
+    scrollbar-color: #36dac0 transparent;
+}
+li {
+    transition: 1s;
+    padding: 2rem;
+    border: 2px solid white ;
+    height: 35rem;
+    border-radius: 3px;
+    list-style: none;
+    color: white;
+    overflow-y: scroll;
+    scrollbar-color: transparent transparent;
+
+}
+li img {
+    border-radius: 5px;
+}
+
+option{
+    background-color: white;
+    color: black;
+    font-family: 'Roboto';
+    border-radius: 10px;
+}
+.send-btn:hover {
+    transition: .3s;
+    background-color: #36dac0;
+    color: #292929;
+    border-radius: 8px;   
+    box-shadow: 5px 5px 15px black;
+}
+.send-btn {
+    transition: .3s;
+    background-color: transparent;
+    border: 2px solid #36dac0;
+    color: #36dac0;
+    margin: 2rem;
+    border-radius: 3px;
+    padding: 1rem 3rem;
+}
+select {
+    background-color: transparent;
+    border: 1px white solid;
+    color: white;
+    margin: 0 1rem;
+    padding: .5rem;
+    border-radius: 2px;
+}
+/* .toggle {
+    transition: .5s;
+    border-radius: 10px;
+    background-color: #FF08E2;
+    border: #FF08E2 1px solid;
+    color: white;
+} */
+
+#page-number:hover {
+    transition: .3s;
+    border-radius: 10px;
+    background-color: #FF08E2;
+    border: #FF08E2 1px solid;
+    color: white;
+    
+}
+#page-number {
+    transition: .5s;
+    background-color: transparent;
+    color: white;
+    margin: .5rem;
+    border: white 1px solid;
+    border-radius: 1px;
+}
+.page-container {
+    display: flex;
+    width: 30%;
+    margin: auto;
+    overflow-x: scroll;
+    scrollbar-color: #FF08E2 transparent;
+}
+img {
+    margin: 2rem auto;
+}
+
+.back:hover {
+    transition: .3s;
+    color: #FF08E2;
+    border: 2px #FF08E2 solid;
+    padding: 1rem 1.5rem;
+    
+}
+.back {
+    transition: .3s;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: #36dac0;
+    border: 2px #36dac0 solid;
+    border-radius: 150px;
+    padding: 2rem 2.5rem;
+    margin: 3rem;
+}
+.resultInfo {
+    text-align: center;
+    color: white;
+}
+.note {
+    position: relative;
+    left: 14.4rem;
+    top: -5rem;
+    background-color: #323232;
+    border: 2px solid #36dac0;
+    border-radius: 100px;
+    position: relative;
+    color:#36dac0;
+    padding: 2rem 1.5rem;
+    width: max-content;
+}
+@keyframes shift {
+    from {
+        color: #FF08E2;
+    }
+    to {
+        
+        color: #36dac0;
+    }
+}

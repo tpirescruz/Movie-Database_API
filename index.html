@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Movie - API</title>
+</head>
+<body>
+    <main id='top'>
+        <div class="title-container">
+            <h1 >The Movie Database <span>API</span></h1>
+            <p>by myself using the TMDb API</p>
+            <hr>
+        </div>
+        <form action="" autocomplete="off">
+            <!-- <div class='genre'>
+                <button>Drama</button>
+                <button>Science - Fiction</button>
+                <button>Horror</button>
+                <button>Romance</button>
+                <button>Drama</button>
+                <button>Fantasy</button>
+                <button>Biopic</button>
+                <button>Documentary</button>
+                <button>Thriller</button>
+                <button>Drama</button>
+                <button>Fantasy</button>
+                <button>Biopic</button>
+                <button>Documentary</button>
+                <button>Thriller</button>
+                <button>Drama</button>
+                <button>Fantasy</button>
+            </div> -->
+            <div class="field-container">
+                <select name="lang" id="lang">
+                    <option value="fr">French</option>
+                    <option value="de">Deutsch</option>
+                    <option value="eng">English</option>
+                    <option value="ja">Japanese</option>
+                </select>
+                <select name="category" id="type">
+                    <option value="movie">Movies</option>
+                    <option value="tv">TV shows</option>
+                </select>
+            </div>
+            <input placeholder='Search by title' name='input' type="text" required autofocus >
+            <button class="send-btn">Search</button>
+        </form>
+        <div class="root">
+
+        </div>
+        <a href='#top' class='back'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708l-4-4z"/>
+          </svg></a>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
